@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./App.css";
-import LightDarkTheme from "./Component/LightDarkTheme/LightDarkTheme";
+import ScrollIndicator from "./Component/Scrollindicator/Scrollindicator";
+//import LightDarkTheme from "./Component/LightDarkTheme/LightDarkTheme";
 //import Image from "./Component/Imageslider/Image";
 //import Qrcode from "./Component/QRcode/QRcode";
 //import LoadMore from "./Component/LoadMore/LoadMore";
@@ -14,7 +15,8 @@ function App() {
       {/*<Header />*/}
       {/*<LoadMore />*/}
       {/*<Qrcode />*/}
-      <LightDarkTheme />
+      {/*<LightDarkTheme />*/}
+      <ScrollIndicator />
     </div>
   );
 }
