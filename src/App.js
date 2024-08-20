@@ -1,7 +1,10 @@
 import React from "react";
 
 import "./App.css";
-import ScrollIndicator from "./Component/Scrollindicator/Scrollindicator";
+
+import Starrarting from "./Component/Starrating/Starrating";
+//import Tab from "./Component/Tab/Tab";
+//import ScrollIndicator from "./Component/Scrollindicator/Scrollindicator";
 //import LightDarkTheme from "./Component/LightDarkTheme/LightDarkTheme";
 //import Image from "./Component/Imageslider/Image";
 //import Qrcode from "./Component/QRcode/QRcode";
@@ -16,7 +19,9 @@ function App() {
       {/*<LoadMore />*/}
       {/*<Qrcode />*/}
       {/*<LightDarkTheme />*/}
-      <ScrollIndicator />
+      {/*<ScrollIndicator />*/}
+      {/*<Tab />*/}
+      <Starrarting />
     </div>
   );
 }
