@@ -33,14 +33,30 @@ const Image = () => {
   };
 
   return (
-    <div>
-      <button onClick={handlePrevious}>Previous</button>
-      {images.length === 0 ? (
-        "Loading"
-      ) : (
-        <img src={images[currentIndex].urls.thumb} alt="images" />
-      )}
-      <button onClick={handleNext}>Next</button>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex items-center space-x-4">
+        <button
+          onClick={handlePrevious}
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+        >
+          Previous
+        </button>
+        {images.length === 0 ? (
+          <span className="text-gray-500">Loading...</span>
+        ) : (
+          <img
+            src={images[currentIndex].urls.thumb}
+            alt="images"
+            className="w-64 h-64 object-cover rounded-md shadow-lg"
+          />
+        )}
+        <button
+          onClick={handleNext}
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 };
